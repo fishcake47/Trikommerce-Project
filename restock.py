@@ -3,6 +3,6 @@ def restock_inventory(available_items, inventory_records, current_day):
         return available_items
     restocked_items = 2000 - available_items
     available_items = 2000
-    inventory_records.append(current_day,0,restocked_items,available_items) # Adds the required information to the record for that day
+    inventory_records.append([current_day,0,restocked_items,available_items]) # Adds the required information to the record for that day
 
     return available_items
