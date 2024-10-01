@@ -1,4 +1,6 @@
 def restock_inventory(available_items, inventory_records, current_day):
+    if not current_day % 7 == 0: # Will only run the function on a restock day
+        return available_items
     '''
 ***********COMPLETE THIS FUNCTION***********
 This function is responsible for updating the stock/restock for a given day.

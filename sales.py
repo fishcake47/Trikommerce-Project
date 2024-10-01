@@ -1,6 +1,8 @@
 import random
 
 def daily_sales(available_items, inventory_records, current_day):
+    if current_day % 7 == 0: # Will only run the function on a sell day
+        return available_items
     '''
 ***********COMPLETE THIS FUNCTION***********
 This function is responsible for updating the sales for a given day.
